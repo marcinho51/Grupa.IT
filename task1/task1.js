@@ -1,5 +1,6 @@
 const btn = document.querySelector("#btn");
-const ul = document.querySelector("#list");
+const columnOfEvenNumbers= document.querySelector("#columnOfEvenNumbers");
+const columnOfOddNumbers= document.querySelector("#columnOfOddNumbers");
 
 
 const randomIntFromInterval = (min, max) => {
@@ -24,6 +25,20 @@ const drawNumbers = () => {
 
     console.log(evenNumbers);
     console.log(oddNumbers);
+
+
+
+    for (let i =0; i<evenNumbers.length;i++) {
+        const newElement = `<h5>${evenNumbers[i]}</h5>`
+        columnOfEvenNumbers.insertAdjacentHTML('beforeend', newElement);
+    }
+
+    for (let i =0; i<oddNumbers.length;i++) {
+        const newElement = `<h5>${oddNumbers[i]}</h5>`
+        columnOfOddNumbers.insertAdjacentHTML('beforeend', newElement);
+    }
+
+
 }
 
 
