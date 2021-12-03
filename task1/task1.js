@@ -23,10 +23,6 @@ const drawNumbers = () => {
     evenNumbers.sort((a,b) => a-b);
     oddNumbers.sort((a,b) => a-b);
 
-    console.log(evenNumbers);
-    console.log(oddNumbers);
-
-
 
     for (let i =0; i<evenNumbers.length;i++) {
         const newElement = `<h5>${evenNumbers[i]}</h5>`
